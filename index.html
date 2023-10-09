@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fórum dos Gamers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial", sans-serif;
+            border: none;
+        }
+
+        body {
+            background: black;
+            overflow: auto;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-image: url("banner.png");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        #forum {
+            width: 40%; /* Ajuste o tamanho da imagem conforme necessário */
+            display: block;
+            margin: 0 auto;
+        }
+
+        #banner {
+            width: 100%;
+        }
+
+        #titulo {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            padding: 20px;
+            color: white;
+            min-height: calc(100vh - 100px); /* Ajusta a altura mínima da seção */
+        }
+
+        #titulo div {
+            max-width: 50%;
+            text-align: center; /* Centraliza o conteúdo dentro da div */
+        }
+
+        #titulo h1 {
+            font-size: 40px;
+            color: white;
+            text-align: center; /* Centraliza o texto h1 no meio da página body */
+        }
+		#titulo h1:hover{
+			color: yellow;
+
+		}
+
+        #titulo ul {
+            list-style-type: disc; /* Estiliza as listas com marcadores */
+            font-size: 15px;
+            color: white;
+            margin-bottom: 10px;
+            padding-left: 50px; /* Espaçamento à esquerda para as listas */
+            text-align: justify;
+            padding: 20px;
+		}
+
+        #titulo ul li {
+            padding-bottom: 10px;
+        }
+
+        #titulo ul li p {
+            font-size: 18px;
+            color: white;
+            text-align: justify;
+        }
+
+        .lista-textos {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            position: fixed;
+            bottom: 0; /* Coloca o footer no rodapé da página */
+            width: 100%;
+            padding: 10px; /* Espaçamento interno do footer */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img id="banner" src="banner.png">
+</header>
+<section class="texto" id="titulo">
+    <div>
+        <h1>Fórum dos Gamers</h1>
+        <ul>
+            <li class="li-texto">
+                <b>Comunidade ativa</b>
+                <p>O seu fórum é um espaço para que os gamers se encontrem e compartilhem suas experiências. Com uma comunidade ativa, os usuários podem encontrar informações, dicas e suporte de outros jogadores.</p>
+            </li>
+            <li class="li-texto">
+                <b>Informações atualizadas</b>
+                <p>O seu fórum é uma fonte de informação atualizada sobre jogos e notícias do mundo dos games. Os usuários podem ficar por dentro das últimas novidades e tendências.</p>
+            </li>
+            <li class="li-texto">
+                <b>Qualidade de vida</b>
+                <p>O seu fórum é um espaço para que os gamers se divirtam e relaxem. Os usuários podem encontrar novos amigos, compartilhar suas paixões e se divertir com jogos e atividades online.</p>
+            </li>
+        </ul>
+	</div>
+    <img id="forum" src="forumgames.jpg" alt="Fórum de Games">
+</section>
+<footer>
+    &copy; Maria Gabriela & Polyana
+</footer>
+</body>
+</html>
